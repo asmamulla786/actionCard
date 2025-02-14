@@ -4,59 +4,77 @@
     <title>ChatBot</title>
     <style>
       div {
-        width: 700px;
-        height: 600px;
-        border: 1px solid black;
+        width: 656px;
+        height: 530px;
+        border: 1px solid rgba(0, 0, 0, 0.4);
         font-family: sans-serif;
-
         margin: 100px auto;
       }
       h1 {
         font-size: 55px;
-        width: 600px;
         color: rgba(0, 0, 0, 0.6);
         font-weight: 200;
-        margin: 30px 0px 0px 60px;
+        margin: 50px 0px 0px 54px;
       }
       hr {
         width: 55px;
         color: rgb(0, 0, 0, 1);
         border: 1px solid black;
         margin-top: 15px;
-        margin-left: 60px;
+        margin-left: 54px;
       }
       p {
-        width: 500px;
         font-size: 25px;
         color: rgba(0, 0, 0, 0.5);
         font-weight: 300;
-        margin-left: 60px;
+        line-height: 32px;
+        margin-left: 54px;
+        margin-right: 40px;
+        letter-spacing: 1px;
       }
       #button {
         width: 550px;
         height: 35px;
         margin: 0px;
         font-size: 22px;
+        letter-spacing: 1px;
         text-align: center;
         font-weight: 300;
-        margin-left: 60px;
+        margin-left: 54px;
         padding-top: 10px;
         border-radius: 25px;
         border: #4184e1;
         background-color: #4184e1;
-        color: white;
+      }
+      #footer {
+        font-size: 17px;
+        color: rgba(0, 0, 0, 0.4);
+        margin-top: 35px;
+        line-height: 28px;
+      }
+      #line {
+        width: 58px;
+        margin: 20px 0px 0px 54px;
+        height: 1px;
+        background-color: rgb(0, 0, 0, 0.6);
       }
     </style>
   </head>
   <body>
     <div>
       <h1>Build your first chatbot in 10 minutes!</h1>
-      <hr />
-      <p id="description">
+      <div id="line"></div>
+      <p>
         Have a bot answering questions from customers on your website within 10
         minutes of signing up for ChatBot
       </p>
-      <div id="button">TRY NOW -></div>
+      <div id="button">
+        <a href="#" style="text-decoration: none; color: white">TRY NOW →</a>
+      </div>
+      <p id="footer">
+        By clicking try now you create an account and agree to our Terms and
+        Conditions and Privacy Policy
+      </p>
     </div>
   </body>
 </html>
