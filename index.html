@@ -1,80 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <title>ChatBot</title>
     <style>
-      div {
-        width: 656px;
-        height: 530px;
-        border: 1px solid rgba(0, 0, 0, 0.4);
-        font-family: sans-serif;
-        margin: 100px auto;
+      body {
+        background-color: bisque;
       }
-      h1 {
-        font-size: 55px;
-        color: rgba(0, 0, 0, 0.6);
-        font-weight: 200;
-        margin: 50px 0px 0px 54px;
-      }
-      hr {
-        width: 55px;
-        color: rgb(0, 0, 0, 1);
-        border: 1px solid black;
-        margin-top: 15px;
-        margin-left: 54px;
-      }
-      p {
-        font-size: 25px;
-        color: rgba(0, 0, 0, 0.5);
-        font-weight: 300;
-        line-height: 32px;
-        margin-left: 54px;
-        margin-right: 40px;
-        letter-spacing: 1px;
-      }
-      #button {
-        width: 550px;
-        height: 35px;
+      * {
         margin: 0px;
-        font-size: 22px;
-        letter-spacing: 1px;
-        text-align: center;
+        padding: 0px;
+        font-family: sans-serif;
+        color: rgba(0, 0, 0, 1);
         font-weight: 300;
-        margin-left: 54px;
-        padding-top: 10px;
-        border-radius: 25px;
-        border: #4184e1;
-        background-color: #4184e1;
+        box-sizing: border-box;
       }
-      #footer {
-        font-size: 17px;
+
+      section {
+        width: 32%;
+        border: 1px solid black;
+        padding: 50px;
+        margin: 80px auto;
+        background-color: white;
+      }
+
+      section > * {
+        margin-bottom: 35px;
+      }
+
+      h1 {
+        font-size: 45px;
+        color: rgba(0, 0, 0, 0.7);
+      }
+
+      div a {
+        text-transform: uppercase;
+        text-decoration: none;
+        display: block;
+        color: white;
+      }
+
+      p {
+        font-size: 23px;
+        color: rgba(0, 0, 0, 0.5);
+        line-height: 26px;
+      }
+
+      #btn-desc {
+        font-size: 16px;
         color: rgba(0, 0, 0, 0.4);
-        margin-top: 35px;
-        line-height: 28px;
+        margin-bottom: 0px;
+        line-height: 20px;
       }
+
+      #btn {
+        width: 95%;
+        background-color: #4184e1;
+        text-align: center;
+        padding: 10px;
+        border-radius: 20px;
+      }
+
       #line {
-        width: 58px;
-        margin: 20px 0px 0px 54px;
-        height: 1px;
-        background-color: rgb(0, 0, 0, 0.6);
+        width: 13%;
+        border: 1.5px solid rgba(0, 0, 0, 0.8);
       }
     </style>
   </head>
   <body>
-    <div>
-      <h1>Build your first chatbot in 10 minutes!</h1>
+    <section>
+      <h1>Build your first chatbot in 10 minutes</h1>
       <div id="line"></div>
       <p>
         Have a bot answering questions from customers on your website within 10
-        minutes of signing up for ChatBot
+        minutes of signing up ChatBot
       </p>
-      <div id="button">
-        <a href="#" style="text-decoration: none; color: white">TRY NOW →</a>
-      </div>
-      <p id="footer">
+      <div id="btn"><a href="#">try now &rarr;</a></div>
+      <p id="btn-desc">
         By clicking try now you create an account and agree to our Terms and
         Conditions and Privacy Policy
       </p>
-    </div>
+    </section>
   </body>
 </html>
